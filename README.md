@@ -21,6 +21,7 @@ Anotações e exercícios praticados no curso de Docker da Udemy
 - docker container run --name my-apache httpd  
 - docker container run --name my-apache -p 8081:80 httpd 
 - docker container run ex-build-arg bash -c 'echo $S3_BUCKET'   
+- docker container run -p 80:80 ex-build-copy  
 
 #### > pull
 - docker image pull redis:latest  
@@ -28,6 +29,7 @@ Anotações e exercícios praticados no curso de Docker da Udemy
 #### > build
 - docker image build -t ex-simple-build .  
 - docker image build --build-arg S3_BUCKET=myapp -t ex-build-arg .  
+- docker image build -t ex-build-copy .  
 
 #### > exec
 - docker container exec ex-daemon-basic uname -or   
