@@ -2,7 +2,7 @@
 Configurações necessárias para subir um container Oracle.
 
 ### Considerações iniciais
-Caso você queira gerar sua própria imagem, siga os passos a partir do tópico *Geração de imagem*.
+Caso você queira gerar sua própria imagem, siga os passos a partir do tópico *Geração da imagem*.
   
 Caso queira usar uma imagem já criada, siga as instruções abaixo:
 - Criar um diretório para ser mapeado como volume do container  
@@ -16,7 +16,7 @@ docker container run \
 -v /home/oracle/container-12.2.0.1-ee:/opt/oracle/oradata \  
 felipethomas/database:12.2.0.1-ee  
   
-Para saber quais são os possíveis parâmetros usados na criação do container, acesse o [repositório de configurações da Oracle](https://github.com/oracle/docker-images/blob/master/OracleDatabase/SingleInstance/README.md#running-oracle-database-in-a-docker-container)  
+Para saber quais são os possíveis parâmetros usados na criação do container acesse o [repositório de configurações da Oracle](https://github.com/oracle/docker-images/blob/master/OracleDatabase/SingleInstance/README.md#running-oracle-database-in-a-docker-container)  
   
 ### Geração da imagem
 - Clonar o [repositório de configurações da Oracle](https://github.com/oracle/docker-images)  
