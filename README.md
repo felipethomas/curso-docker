@@ -1,6 +1,7 @@
 # curso-docker
 Anotações e exercícios praticados no curso de Docker da Udemy  
-
+  
+  
 ### comandos
 - docker --help  
 - docker --help | more  
@@ -64,8 +65,13 @@ Anotações e exercícios praticados no curso de Docker da Udemy
 - docker image inspect --format="{{index .Config.Labels \"maintainer\"}}" ex-build-arg  
 
 #### > tag
-- docker image tag redis:latest cod3r-redis
-
+- docker image tag redis:latest cod3r-redis  
+  
 #### > outros
 - docker container -p 8081:80 my-apache  
 
+
+### Docker Hub
+- docker image tag oracle/database:12.2.0.1-ee felipethomas/oracle:12.2.0.1-ee  
+- docker login --username=felipethomas  
+- docker image push felipethomas/oracle:12.2.0.1-ee 

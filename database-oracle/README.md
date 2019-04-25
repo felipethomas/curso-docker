@@ -24,7 +24,7 @@ docker run --name oracle12_2 \
   
 ### Inicializar o banco de dados
 - Executar o container com docker container start oracle12_2  
-- Aguardar o status ficar *healthy* (cerca de 1 minuto)  
+- Aguardar o status do container ficar *healthy* (cerca de 1 minuto)  
 
 ### Referências
  - [Utilizando o Oracle Database 12.2 no Docker](https://www.oracle.com/technetwork/pt/articles/database-performance/oracle-db12-2-no-docker-4427706-ptb.html)
