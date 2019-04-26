@@ -22,7 +22,7 @@ Para saber quais são os possíveis parâmetros usados na criação do container
 - Clonar o [repositório de configurações da Oracle](https://github.com/oracle/docker-images)  
 - Fazer o download do [Oracle Database 12c Release 2 para Linux x86-64](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html)  
 - Copiar o arquivo *linuxx64_12201_database.zip* para o diretório *docker-images/OracleDatabase/SingleInstance/dockerfiles/12.2.0.1*  
-- Gerar a imagem com o comando ./buildDockerImage.sh -v 12.2.0.1 –e  
+- Gerar a imagem com o comando ./buildDockerImage.sh -v 12.2.0.1 -e  
   
 ### Criação do banco de dados usando a imagem criada
 - Criar um diretório para ser mapeado como volume do container  
