@@ -1,9 +1,9 @@
 # Oracle 18c XE
 
-### Método usando oraclelinux:7-slim
-[Guia de instruções](https://github.com/felipethomas/docker-oracle-xe/blob/master/README.md)
-
-### Método mais completo
+### Método que usa oraclelinux:7-slim
+- [Guia de instruções](https://github.com/felipethomas/docker-oracle-xe/blob/master/README.md)
+  
+### Método que usa centos:7
 - download dos arquivos: oracle-database-preinstall-18c-1.0-1.el7.x86_64 e oracle-database-xe-18c-1.0-1.x86_64
 
 - docker container run -it --name centos_oracle centos:7  
