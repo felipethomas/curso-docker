@@ -23,6 +23,8 @@ Anotações e exercícios praticados no curso de Docker da Udemy
 - docker container run --name my-apache -p 8081:80 httpd 
 - docker container run ex-build-arg bash -c 'echo $S3_BUCKET'   
 - docker container run -p 80:80 ex-build-copy  
+- docker container run -it -v $(pwd):/app -p 80:8000 --name python-server ex-build-dev  
+- docker container run -it --volumes-from=python-server debian cat /log/http-server.log  
 
 #### > pull
 - docker image pull redis:latest  
