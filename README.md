@@ -69,6 +69,20 @@ Anotações e exercícios praticados no curso de Docker da Udemy
 #### > tag
 - docker image tag redis:latest cod3r-redis  
   
+#### > network  
+- docker network ls  
+- docker container run --rm alpine ash -c "ifconfig"  
+- docker container run --rm --net none alpine ash -c "ifconfig"  
+- docker container run -d --name container1 alpine sleep 1000  
+- docker container run -d --name container3 --net rede_nova alpine sleep 1000  
+- docker container run -d --name container4 --net host alpine sleep 1000  
+- docker container exec -it container1 ifconfig  
+- docker container exec -it container1 ping www.google.com   
+- docker network create --driver bridge rede_nova  
+- docker network inspect rede_nova  
+- docker network connect bridge container3  
+- docker network disconnect bridge container3  
+  
 #### > outros
 - docker container -p 8081:80 my-apache  
   
