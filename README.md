@@ -82,6 +82,9 @@ Anotações e exercícios praticados no curso de Docker da Udemy
 - docker network inspect rede_nova  
 - docker network connect bridge container3  
 - docker network disconnect bridge container3  
+
+#### > composer
+- docker-compose up  
   
 #### > outros
 - docker container -p 8081:80 my-apache  
