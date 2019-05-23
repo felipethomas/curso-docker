@@ -85,4 +85,6 @@ Anotações e exercícios praticados no curso de Docker da Udemy
   
 #### > outros
 - docker container -p 8081:80 my-apache  
+- docker container ps --filter "name=oracle18c_xe" --format "table {{.Names}}\t{{.Status}}"  
+- docker rename oracle18c_xe oracle_backup  
     
