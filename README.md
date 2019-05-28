@@ -86,10 +86,12 @@ Anotações e exercícios praticados no curso de Docker da Udemy
 #### > composer
 - docker-compose up  
 - docker-compose up -d  
+- docker-compose up -d --scale worker=3  
 - docker-compose ps  
 - docker-compose exec db psql -U postgres -c '\l'  
 - docker-compose down  
 - docker-compose logs -f -t  
+- docker-compose logs -f -t worker  
 - docker-compose exec db psql -U postgres -d email_sender -c 'select * from emails'  
   
 #### > outros
